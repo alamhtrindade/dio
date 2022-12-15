@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { IColumn } from "./types";
+
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
@@ -30,7 +32,7 @@ color: #FFFFFF70;
 margin-bottom: 24px;
 `
 
-export const Column = styled.div`
+export const Column = styled.div<IColumn>`
     flex: ${({flex}) => flex};
     padding-right: 24px;
 `
